@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #68230133;
+    
+}
+
+.menu-container {
+    margin-top: 5%;
+    text-align: left;
+    background-color: #f5f5f5; /* Svetlo siva boja meni kontejnera */
+    color: #000; /* Crna boja teksta */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding-bottom 0.3s ease;
+   
+}
+
+
+.logo div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right; /* Dodato da centriramo tekst */
+}
+
+.logo img {
+    width: 150px;
+    margin-right: 10px; /* Dodato margina sa desne strane */
+}
+
+.logo span {
+    font-style: oblique;
+    color: #311000fd;
+    font-size: 22px;
+    opacity: 0; /* Postavi početnu vrednost na 0 */
+    animation: fadeIn 1s forwards; /* Koristi fadeIn animaciju tokom 1 sekunde */
+}
+
+.fp{
+    font-style: oblique;
+    color: #311000fd;
+    font-size: 16px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.menu-item {
+    margin: 10px 0;
+    cursor: pointer;
+    border: 1px solidrgba(157, 52, 0, 0.333)1; /* Crni okvir */
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #7d3917a1; /* Zlatna pozadina */
+}
+
+.menu-item h2 {
+    margin: 0;
+    cursor: pointer;
+    color: #311000fd;
+    font-size: 22px;
+}
+
+.menu-item.active {
+    background-color: #68230161; /* Crna boja za aktivne stavke */
+    color: #fff; /* Bela boja teksta za aktivne stavke */
+}
+
+.menu-item.active h2 {
+    color: #fff; /* Bela boja teksta za aktivne stavke */
+}
+
+.submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #f5f5f5; /* Svetlo siva boja meni kontejnera */
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.menu-item-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid  #68230158; /* Crna boja za liniju ispod stavki */
+    padding-bottom: 10px;
+}
+
+.menu-item-detail img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.menu-item-info {
+    flex: 1;
+}
+
+.menu-item-info p {
+    margin: 0;
+}
+
+.item-price {
+    font-style: oblique;
+    font-weight: bold;
+    color:  #311000fd;
+    text-align: right;
+}
+
+.item {
+    color: #311000fd;
+}
+
+.menu-item.active .submenu {
+    max-height: 1000px;
+    display: block;
+}
+
+.menu-item.active #menuContainer {
+    padding-bottom: 50px;
+}

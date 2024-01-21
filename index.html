@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-... (hash vrednost)" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo1.png" type="image/png">
+    <title>Kafe Meni</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-6">
+                <div class="menu-container" id="menuContainer">
+
+                    <div class="logo">
+                        <div>
+                            <img src="images/logo1.png" alt="Logo Image">
+                            <span>Digitalni meni</span>
+                            <hr>
+                        </div>
+                       
+                    </div>
+
+                    <!-- Kategorija 1 -->
+                    <div class="menu-item" onclick="toggleSubMenu(this)">
+                        <h2 class="text-center" style="margin-bottom: 2px;">
+                            <span>
+                                <i class="fas fa-glass-martini-alt"></i> <!-- Ikona za aperitiv i likere -->
+                                Aperitivi i likeri
+                            </span>
+                        </h2>
+                        <div class="submenu">
+                            <!-- Podaci će se dinamički generisati ovde pomoću JavaScript-a -->
+                        </div>
+                    </div>
+                    
+
+                    <!-- Kategorija 2 -->
+                    <div class="menu-item" onclick="toggleSubMenu(this)">
+                        <h2 class="text-center" style="margin-bottom: 2px;">
+                            <span>
+                                <i class="fas fa-wine-glass"></i> <!-- Ikona za vina -->
+                            Vina
+                            </span>
+                        </h2>
+                        <div class="submenu">
+                            <!-- Podaci će se dinamički generisati ovde pomoću JavaScript-a -->
+                        </div>
+                    </div>
+
+                    <!-- Kategorija 3 -->
+                    <div class="menu-item" onclick="toggleSubMenu(this)">
+                        <h2 class="text-center" style="margin-bottom: 2px;">
+                            <span>
+                                <i class="fas fa-beer"></i> 
+                            Piva
+                            </span>
+                        </h2>
+                        <div class="submenu">
+                            <!-- Podaci će se dinamički generisati ovde pomoću JavaScript-a -->
+                        </div>
+                    </div>
+
+                    <div class="menu-item" onclick="toggleSubMenu(this)">
+                        <h2 class="text-center" style="margin-bottom: 2px;">
+                            <span>
+                                <i class="fas fa-cookie-bite"></i> 
+                            Grickalice
+                            </span>
+                        </h2>
+                        <div class="submenu">
+                            <!-- Podaci će se dinamički generisati ovde pomoću JavaScript-a -->
+                        </div>
+                    </div>
+                    <!-- Dodajte ostale kategorije po potrebi -->
+
+
+                    <footer class="text-center mt-5">
+                        <p class="fp">&copy; 2024 Kafe Kulturica - Vaša omiljena lokacija.</p>
+                    </footer>
+                </div>
+
+               
+            </div>
+           
+        </div>
+        
+    </div>
+
+
+  
+    <!-- Dodajte ostatak sadržaja vaše stranice ovde -->
+
+    <script src="script.js"></script>
+</body>
+</html>
