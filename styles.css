@@ -40,7 +40,7 @@ body {
 .logo span {
     font-style: oblique;
     color: #311000fd;
-    font-size: 20pt;
+    font-size: 18pt;
     font-weight: bold;
     opacity: 0; /* Postavi početnu vrednost na 0 */
     animation: fadeIn 1s forwards; /* Koristi fadeIn animaciju tokom 1 sekunde */
