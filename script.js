@@ -1,256 +1,307 @@
 const menuData = {
-     "categories": [
-         {
-             "name": "Aperitivi i likeri",
-             "items": [
-                 {
-                     "name": "Gorka tajna 0,05l",
-                     "image": "images/gorka_tajna00_5l.jpeg",
-                     "price": "150"
-                 },
-                 {
-                     "name": "Gorki list 0,05l",
-                     "image": "images/gorki_list.jpg",
-                     "price": "170"
-                 },
-                 {
-                     "name": "Vinjak Rubin 0,05l",
-                     "image": "images/vinjak_rubin.jpg",
-                     "price": "150"
-                 },
-                 {
-                    "name": "Vinjak 5 0,05l",
-                    "image": "images/vinjak_rubin5.jpg",
-                    "price": "240"
+    "categories": [
+        {
+            "name": "Aperitivi i likeri",
+            "items": [
+                {
+                    "name": "Gorka tajna 0,05l",
+                    "image": "images/gorka_tajna00_5l.png",
+                    "price": "150 RSD"
                 },
                 {
-                    "name": "Tekila 0,03l",
-                    "image": "images/tekila.png",
-                    "price": "230"
+                    "name": "Gorki list 0,05l",
+                    "image": "images/gorki_list.png",
+                    "price": "170 RSD"
                 },
                 {
-                    "name": "Gin Rubin 0,05l",
-                    "image": "images/gin_rubin.png",
-                    "price": "160"
+                    "name": "Vinjak Rubin 0,05l",
+                    "image": "images/vinjak_rubin.png",
+                    "price": "150 RSD"
                 },
                 {
-                    "name": "Gin Kraft 0,05l",
-                    "image": "images/gin_kraft1.png",
-                    "price": "230"
+                   "name": "Vinjak 5 0,05l",
+                   "image": "images/vinjak_rubin5.png",
+                   "price": "240 RSD"
+               },
+               {
+                   "name": "Tekila 0,03l",
+                   "image": "images/tekila.png",
+                   "price": "230 RSD"
+               },
+               {
+                   "name": "Gin Rubin 0,05l",
+                   "image": "images/gin_rubin.png",
+                   "price": "160 RSD"
+               },
+               {
+                   "name": "Gin Kraft 0,05l",
+                   "image": "images/gin_kraft1.png",
+                   "price": "230 RSD"
+               },
+               {
+                   "name": "Votka 0,05l",
+                   "image": "images/votka.jpg",
+                   "price": "150 RSD"
+               },
+               {
+                   "name": "Vermut 0,1l",
+                   "image": "images/vermut.png",
+                   "price": "150 RSD"
+               },
+               {
+                   "name": "Viljamovka Takovo 0,05",
+                   "image": "images/viljamovka.png",
+                   "price": "280 RSD"
+               },
+               {
+                   "name": "Pelinkovac 0,05",
+                   "image": "images/pelinkovac2.png",
+                   "price": "170 RSD"
+               },
+               {
+                   "name": "Rakija kajsija 0,05",
+                   "image": "images/kajsija.jpg",
+                   "price": "180 RSD"
+               },
+               {
+                   "name": "Rakija dunja 0,05",
+                   "image": "images/dunja.jpg",
+                   "price": "180 RSD"
+               },
+               {
+                   "name": "Rakija jabuka 0,05",
+                   "image": "images/jabuka.jpg",
+                   "price": "180 RSD"
+               },
+               {
+                   "name": "Rakija šljiva 0,05",
+                   "image": "images/sljiva.jpg",
+                   "price": "160 RSD"
+               },
+               {
+                   "name": "Stock 84 0,05",
+                   "image": "images/stok.png",
+                   "price": "220 RSD"
+               },
+               {
+                   "name": "Jagermeister  0,05",
+                   "image": "images/jeger1.png",
+                   "price": "290 RSD"
+               },
+                // Dodajte ostale stavke za tople napitke po potrebi
+            ]
+        },
+        {
+            "name": "Vina",
+            "items": [
+                {
+                    "name": "Graševina 0,1l",
+                    "image": "images/grasevina.png",
+                    "price": "110 RSD"
                 },
                 {
-                    "name": "Votka 0,05l",
-                    "image": "images/votka.jpg",
-                    "price": "150"
+                    "name": "Vranac 0,1l",
+                    "image": "images/vranac.png",
+                    "price": "110 RSD"
                 },
                 {
-                    "name": "Vermut 0,1l",
-                    "image": "images/vermut.png",
-                    "price": "150"
+                   "name": "Vina 0,187l",
+                   "image": "images/vino.png",
+                   "price": "290 RSD"
+               },
+               {
+                   "name": "Kuvano vino 0,2l",
+                   "image": "images/kuvanovino.png",
+                   "price": "230 RSD"
+               },
+               {
+                   "name": "Sangrija 0,2l",
+                   "image": "images/sangrija.png",
+                   "price": "190 RSD"
+               },
+               {
+                   "name": "Crno vino Praška 0,1l",
+                   "image": "images/sangrija.png",
+                   "price": "140 RSD"
+               },
+               {
+                   "name": "Belo vino Praška 0,1l",
+                   "image": "images/sangrija.png",
+                   "price": "130 RSD"
+               },
+               {
+                   "name": "Rose vino Praška 0,1l",
+                   "image": "images/sangrija.png",
+                   "price": "140 RSD"
+               },
+                // Dodajte ostale stavke za hladne napitke po potrebi
+            ]
+        },
+        {
+            "name": "Piva",
+            "items": [
+                {
+                    "name": "Lav Premium 0,5l",
+                    "image": "images/premium1.png",
+                    "price": "160 RSD"
                 },
                 {
-                    "name": "Viljamovka Takovo 0,05",
-                    "image": "images/viljamovka.jpg",
-                    "price": "280"
+                    "name": "Lav Premium 0,33l",
+                    "image": "images/premium1.png",
+                    "price": "190 RSD"
                 },
                 {
-                    "name": "Pelinkovac 0,05",
-                    "image": "images/pelinkovac2.jpeg",
-                    "price": "170"
-                },
-                {
-                    "name": "Rakija kajsija 0,05",
-                    "image": "images/kajsija.jpg",
-                    "price": "180"
-                },
-                {
-                    "name": "Rakija dunja 0,05",
-                    "image": "images/dunja.jpg",
-                    "price": "180"
-                },
-                {
-                    "name": "Rakija jabuka 0,05",
-                    "image": "images/jabuka.jpg",
-                    "price": "180"
-                },
-                {
-                    "name": "Rakija šljiva 0,05",
-                    "image": "images/sljiva.jpg",
-                    "price": "160"
-                },
-                {
-                    "name": "Stock 84 0,05",
-                    "image": "images/stok.jpg",
-                    "price": "220"
-                },
-                {
-                    "name": "Jagermeister  0,05",
-                    "image": "images/jeger1.jpeg",
-                    "price": "290"
-                },
-                 // Dodajte ostale stavke za tople napitke po potrebi
-             ]
-         },
-         {
-             "name": "Vina",
-             "items": [
-                 {
-                     "name": "Graševina 0,1l",
-                     "image": "images/grasevina.jpg",
-                     "price": "110"
-                 },
-                 {
-                     "name": "Vranac 0,1l",
-                     "image": "images/vranac.jpg",
-                     "price": "110"
-                 },
-                 {
-                    "name": "Vina 0,187l",
-                    "image": "images/vino.jpg",
-                    "price": "290"
-                },
-                {
-                    "name": "Kuvano vino 0,2l",
-                    "image": "images/kuvanovino.png",
-                    "price": "230"
-                },
-                {
-                    "name": "Sangrija 0,2l",
-                    "image": "images/sangrija.jpg",
-                    "price": "190"
-                },
-                {
-                    "name": "Crno vino Praška 0,1l",
-                    "image": "images/sangrija.jpg",
-                    "price": "140"
-                },
-                {
-                    "name": "Belo vino Praška 0,1l",
-                    "image": "images/sangrija.jpg",
-                    "price": "130"
-                },
-                {
-                    "name": "Rose vino Praška 0,1l",
-                    "image": "images/sangrija.jpg",
-                    "price": "140"
-                },
-                 // Dodajte ostale stavke za hladne napitke po potrebi
-             ]
-         },
-         {
-             "name": "Piva",
-             "items": [
-                 {
-                     "name": "Lav Premium 0,5l",
-                     "image": "images/premium1.png",
-                     "price": "160"
-                 },
-                 {
-                     "name": "Lav Premium 0,33l",
-                     "image": "images/premium1.png",
-                     "price": "190"
-                 },
-                 {
-                    "name": "Lav  0,5l",
-                    "image": "images/lav05.jpeg",
-                    "price": "160"
-                },
-                {
-                    "name": "Tuborg  0,33l",
-                    "image": "images/tuborg2.jpg",
-                    "price": "240"
-                },
-                {
-                    "name": "Tuborg Ice  0,33l",
-                    "image": "images/tuborgice.jpeg",
-                    "price": "240"
-                },
-                {
-                    "name": "Budweiser dark 0,33l",
-                    "image": "images/badcrni.jpg",
-                    "price": "240"
-                },
-                {
-                    "name": "Budweiser  0,33l",
-                    "image": "images/bad.jpg",
-                    "price": "230"
-                },
-                {
-                    "name": "Carlsberg 0,25l",
-                    "image": "images/calsberg.jpg",
-                    "price": "260"
-                },
-                {
-                    "name": "Carlsberg 0,4l",
-                    "image": "images/calsberg.jpg",
-                    "price": "220"
-                },
-                {
-                    "name": "Erdinger 0,33l",
-                    "image": "images/erdinger.jpg",
-                    "price": "300"
-                },
-                {
-                    "name": "Grimbergen blond 0,33l",
-                    "image": "images/grimblond.jpeg",
-                    "price": "230"
-                },
-                {
-                    "name": "San miguel fresca 0,33l",
-                    "image": "images/sanmigel1.jpg",
-                    "price": "340"
-                },
-                {
-                    "name": "Kronenbourg blanc 0,33l",
-                    "image": "images/cron.jpeg",
-                    "price": "240"
-                },
-                {
-                    "name": "Somersby 0,33l",
-                    "image": "images/somer.png",
-                    "price": "250"
-                },
-                {
-                    "name": "Lav Premium Točeni 0,33l",
-                    "image": "images/lavtoceno.jpg",
-                    "price": "190"
-                },
-                {
-                    "name": "Lav Premium Točeni 0,5l",
-                    "image": "images/lavtoceno.jpg",
-                    "price": "220"
-                },
-                {
-                    "name": "Kronenbourg Točeni 0,33l",
-                    "image": "images/krontoceni.png",
-                    "price": "260"
-                },
-                {
-                    "name": "Kronenbourg Točeni 0,5l",
-                    "image": "images/krontoceni.png",
-                    "price": "290"
-                },
-             ]
-         },
-         {
-          "name": "Grickalice",
-          "items": [
-              {
-                  "name": "Čips 150g",
-                  "image": "images/cips1.jpg",
-                  "price": "240"
-              },
-              {
-                  "name": "Kikiriki 100g",
-                  "image": "images/kikiriki1.jpg",
-                  "price": "190"
-              }
-              // Dodajte ostale stavke za alkoholne napitke po potrebi
-          ]
-      }
-         // Dodajte podatke za dodatne kategorije po potrebi
-     ]
- };
+                   "name": "Lav  0,5l",
+                   "image": "images/lav05.png",
+                   "price": "160 RSD"
+               },
+               {
+                   "name": "Tuborg  0,33l",
+                   "image": "images/tuborg2.png",
+                   "price": "240 RSD"
+               },
+               {
+                   "name": "Tuborg Ice  0,33l",
+                   "image": "images/tuborgice.png",
+                   "price": "240 RSD"
+               },
+               {
+                   "name": "Budweiser dark 0,33l",
+                   "image": "images/badcrni.png",
+                   "price": "240 RSD"
+               },
+               {
+                   "name": "Budweiser  0,33l",
+                   "image": "images/bad.png",
+                   "price": "230 RSD"
+               },
+               {
+                   "name": "Carlsberg 0,25l",
+                   "image": "images/calsberg.png",
+                   "price": "260 RSD"
+               },
+               {
+                   "name": "Carlsberg 0,4l",
+                   "image": "images/calsberg.png",
+                   "price": "220 RSD"
+               },
+               {
+                   "name": "Erdinger 0,33l",
+                   "image": "images/erdinger.png",
+                   "price": "300 RSD"
+               },
+               {
+                   "name": "Grimbergen blond 0,33l",
+                   "image": "images/grimblond.png",
+                   "price": "230 RSD"
+               },
+               {
+                   "name": "San miguel fresca 0,33l",
+                   "image": "images/sanmigel1.png",
+                   "price": "340 RSD"
+               },
+               {
+                   "name": "Kronenbourg blanc 0,33l",
+                   "image": "images/cron.png",
+                   "price": "240 RSD"
+               },
+               {
+                   "name": "Somersby 0,33l",
+                   "image": "images/somer.png",
+                   "price": "250 RSD"
+               },
+               {
+                   "name": "Lav Premium Točeni 0,33l",
+                   "image": "images/lavtoceno.png",
+                   "price": "190 RSD"
+               },
+               {
+                   "name": "Lav Premium Točeni 0,5l",
+                   "image": "images/lavtoceno.png",
+                   "price": "220 RSD"
+               },
+               {
+                   "name": "Kronenbourg Točeni 0,33l",
+                   "image": "images/krontoceni.png",
+                   "price": "260 RSD"
+               },
+               {
+                   "name": "Kronenbourg Točeni 0,5l",
+                   "image": "images/krontoceni.png",
+                   "price": "290 RSD"
+               },
+            ]
+        },
+        {
+         "name": "Grickalice",
+         "items": [
+             {
+                 "name": "Čips 150g",
+                 "image": "images/cips1.png",
+                 "price": "240 RSD"
+             },
+             {
+                 "name": "Kikiriki 100g",
+                 "image": "images/kikiriki1.png",
+                 "price": "190 RSD"
+             }
+             // Dodajte ostale stavke za alkoholne napitke po potrebi
+         ]
+     },
+     {
+         "name": "Topli Napici",
+         "items": [
+             {
+                 "name": "Espresso kafa",
+                 "image": "images/kafa.png",
+                 "price": "140 RSD"
+             },
+             {
+                 "name": "Espresso kafa sa šlagom",
+                 "image": "images/kafaslag.png",
+                 "price": "170 RSD"
+             },
+             {
+              "name": "Cappucino",
+              "image": "images/cappucino.png",
+              "price": "160 RSD"
+          },
+          {
+              "name": "Domaća kafa",
+              "image": "images/domacakafa.png",
+              "price": "100 RSD"
+          },
+          {
+              "name": "Topla čokolada",
+              "image": "images/toplacokolada.png",
+              "price": "170 RSD"
+          },
+          {
+              "name": "Topla čokolada sa šlagom",
+              "image": "images/toplacokoladaslag.png",
+              "price": "200 RSD"
+          },
+          {
+              "name": "Čaj fructus",
+              "image": "images/caj.png",
+              "price": "140 RSD"
+          },
+          {
+              "name": "Šlag",
+              "image": "images/slag.png",
+              "price": "30 RSD"
+          },
+          {
+              "name": "Mleko",
+              "image": "images/mleko.png",
+              "price": "60 RSD"
+          },
+             // Dodajte ostale stavke za alkoholne napitke po potrebi
+         ]
+     }
+        // Dodajte podatke za dodatne kategorije po potrebi
+    ]
+};
  
    
  function toggleSubMenu(menuItem) {
@@ -321,4 +372,22 @@ const menuData = {
      submenuContainer.style.maxHeight = submenuContainer.scrollHeight + 'px';
  }
  
+
+ function copyWifiKey() {
+    var wifiKeyElement = document.getElementById('wifiKey');
+    var wifiKey = wifiKeyElement.textContent;
+
+    // Kopiraj tekst u međuspremnik
+    var textArea = document.createElement("textarea");
+    textArea.value = wifiKey;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+
+    toastr.success('Uspešno kopirano!', '', {
+        positionClass: 'toast-top-center', // Postavite ovu opciju za centriranje na vrhu
+        timeOut: 2000 // Podešavanje trajanja obaveštenja na 2 sekunde
+    });
+}
  

@@ -149,3 +149,78 @@ body {
 .menu-item.active #menuContainer {
     padding-bottom: 50px;
 }
+
+.menu-item.active .arrow-icon {
+    transform: rotate(180deg);
+    /* Dodajte druge stilove po potrebi */
+}
+
+.wifi-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wifi-info {
+    color: #311000fd;
+    text-align: left;
+    font-size: 14px;
+}
+
+.wifi-lang {
+    text-align: right;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.baner {
+    background: linear-gradient(to right, #3110008c, #3110008c 20%, #3110008c 20%, #31100057);
+    color: white; /* Boja teksta */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left; /* Poravnanje teksta u levo */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase; /* Pretvori tekst u velika slova */
+    letter-spacing: 2px; /* Razmak između slova */
+    display: flex;
+    flex-direction: column; /* Poravnanje elemenata u kolonu */
+    align-items: flex-start; /* Poravnanje elemenata na levo */
+}
+
+.action-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.center-text {
+    font-size: 18px;
+    text-align: center; /* Poravnanje teksta u centar */
+}
+
+.green-text {
+    color: #78fd4f; /* Zelena boja samo za + Cedevita */
+}
+
+.price-text {
+    
+    font-weight: bold;
+    text-align: right; /* Poravnanje teksta u desno */
+}
+
+
+
+.offer {
+    font-size: 18px;
+    margin: 0;
+}
+
+.special-offer {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
