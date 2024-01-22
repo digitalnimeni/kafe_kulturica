@@ -15,7 +15,12 @@
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-6">
                 <div class="menu-container" id="menuContainer">
-
+                    <div id="lang" class="text-right">
+                        <img src="images/sr.png" alt="Logo Image" style="width: 35px;">
+                        <img src="images/en.png" alt="Logo Image" style="width: 35px;">
+                    </div>
+                    <hr>
+                    
                     <div class="logo">
                         <div>
                             <img src="images/logo1.png" alt="Logo Image">
@@ -24,13 +29,15 @@
                         </div>
                        
                     </div>
-
+                    
+                    <hr><br>
                     <!-- Kategorija 1 -->
-                    <div class="menu-item" onclick="toggleSubMenu(this)">
-                        <h2 class="text-center" style="margin-bottom: 2px;">
-                            <span>
-                                <i class="fas fa-glass-martini-alt"></i> <!-- Ikona za aperitiv i likere -->
-                                Aperitivi i likeri
+                    <div class="menu-item shadow-sm" onclick="toggleSubMenu(this)">
+                        <h2 style="margin-bottom: 2px;">
+                            <span class="d-flex">
+                                <i class="fas fa-glass-martini-alt" style="width: 35px;"></i> <!-- Ikona za aperitiv i likere -->                                
+                                <span class="w-75">Aperitivi i likeri</span>
+                                <i class="fas fa-angle-down ml-4 mt-1"></i>
                             </span>
                         </h2>
                         <div class="submenu">
@@ -40,11 +47,12 @@
                     
 
                     <!-- Kategorija 2 -->
-                    <div class="menu-item" onclick="toggleSubMenu(this)">
-                        <h2 class="text-center" style="margin-bottom: 2px;">
-                            <span>
-                                <i class="fas fa-wine-glass"></i> <!-- Ikona za vina -->
-                            Vina
+                    <div class="menu-item shadow-sm" onclick="toggleSubMenu(this)">
+                        <h2 style="margin-bottom: 2px;">
+                            <span class="d-flex">
+                                <i class="fas fa-wine-glass" style="width: 35px;"></i> <!-- Ikona za vina -->
+                                <span class="w-75">Vina</span>
+                                <i class="fas fa-angle-down ml-4 mt-1"></i>
                             </span>
                         </h2>
                         <div class="submenu">
@@ -53,23 +61,26 @@
                     </div>
 
                     <!-- Kategorija 3 -->
-                    <div class="menu-item" onclick="toggleSubMenu(this)">
-                        <h2 class="text-center" style="margin-bottom: 2px;">
-                            <span>
-                                <i class="fas fa-beer"></i> 
-                            Piva
+                    <div class="menu-item shadow-sm" onclick="toggleSubMenu(this)">
+                        <h2 style="margin-bottom: 2px;">
+                            <span class="d-flex">
+                                <i class="fas fa-beer" style="width: 35px;"></i> 
+                            <span class="w-75">Piva</span>
+                            <i class="fas fa-angle-down ml-4 mt-1"></i>
                             </span>
+                           
                         </h2>
                         <div class="submenu">
                             <!-- Podaci će se dinamički generisati ovde pomoću JavaScript-a -->
                         </div>
                     </div>
 
-                    <div class="menu-item" onclick="toggleSubMenu(this)">
-                        <h2 class="text-center" style="margin-bottom: 2px;">
-                            <span>
-                                <i class="fas fa-cookie-bite"></i> 
-                            Grickalice
+                    <div class="menu-item shadow-sm" onclick="toggleSubMenu(this)">
+                        <h2 style="margin-bottom: 2px;">
+                            <span class="d-flex">
+                                <i class="fas fa-cookie-bite" style="width: 35px;"></i> 
+                                <span class="w-75">Grickalice</span>
+                                <i class="fas fa-angle-down ml-4 mt-1"></i>
                             </span>
                         </h2>
                         <div class="submenu">
@@ -77,8 +88,10 @@
                         </div>
                     </div>
                     <!-- Dodajte ostale kategorije po potrebi -->
-
-
+                    <br>
+                    <hr>
+                    <span><b>Napomena:</b><i>Cene su izražene u dinarima (RSD).</i></span>
+                    <hr>
                     <footer class="text-center mt-5">
                         <p class="fp">&copy; 2024 Kafe Kulturica - Vaša omiljena lokacija.</p>
                     </footer>
