@@ -40,7 +40,7 @@ body {
 .logo span {
     font-style: oblique;
     color: #311000fd;
-    font-size: 20pt;
+    font-size: 16pt;
     font-weight: bold;
     opacity: 0; /* Postavi početnu vrednost na 0 */
     animation: fadeIn 1s forwards; /* Koristi fadeIn animaciju tokom 1 sekunde */
@@ -177,40 +177,41 @@ body {
 }
 
 .baner {
-    background: linear-gradient(to right, #3110008c, #3110008c 20%, #3110008c 20%, #31100057);
-    color: white; /* Boja teksta */
-    padding: 10px;
-    border-radius: 5px;
-    text-align: left; /* Poravnanje teksta u levo */
+    background: linear-gradient(to right, rgba(156, 52, 0, 0.733), rgba(156, 52, 0, 0.54) 50%, rgba(156, 52, 0, 0.54) 20%,rgba(156, 52, 0, 0.733));
+
+    color: white;
+    padding: 15px; /* Povećan padding za bolju vidljivost */
+    border-radius: 10px; /* Povećan radijus zaobljenja ivica */
+    text-align: center; /* Tekst centriran */
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-transform: uppercase; /* Pretvori tekst u velika slova */
-    letter-spacing: 2px; /* Razmak između slova */
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Smanjen razmak između slova */
     display: flex;
-    flex-direction: column; /* Poravnanje elemenata u kolonu */
-    align-items: flex-start; /* Poravnanje elemenata na levo */
+    flex-direction: column;
+    align-items: center; /* Elementi centrirani horizontalno */
 }
 
 .action-text {
-    font-size: 20px;
+    font-size: 24px; /* Povećana veličina fonta */
     font-weight: bold;
-    text-align: left;
 }
 
 .center-text {
-    font-size: 18px;
-    text-align: center; /* Poravnanje teksta u centar */
+    font-size: 20px;
+    margin-top: 5px; /* Povećan razmak između linija teksta */
 }
 
 .green-text {
-    color: #78fd4f; /* Zelena boja samo za + Cedevita */
+    color: #78fd4f;
 }
 
 .price-text {
-    
+    font-size: 24px; /* Povećana veličina fonta */
     font-weight: bold;
-    text-align: right; /* Poravnanje teksta u desno */
+    margin-top: 5px; /* Povećan razmak između linija teksta */
 }
+
 
 
 

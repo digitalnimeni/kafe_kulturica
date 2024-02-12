@@ -22,14 +22,15 @@
                     <div class="wifi-container">
                         <!-- Leva strana -->
                         <div class="wifi-info">
-                            <p><span class="bold">WiFi SSID:</span> <span id="wifiSSID">KafeKulturica</span></p>
-                            <p><span class="bold">Ključ:</span> <span id="wifiKey" onclick="copyWifiKey()">kafekulturica2024</span></p>
+                            <p><span class="bold"><i class="fas fa-wifi"></i></span> <span id="wifiSSID">Kulturica 5G</span></p>
+                            <p><span class="bold"><i class="fas fa-lock"></i></span> <span id="wifiKey" onclick="copyWifiKey()">kulturica2022</span></p>
+                            
                         </div>
                     
                         <!-- Desna strana -->
                         <div class="wifi-lang">
-                            <img src="images/sr.png" alt="Logo Image" style="width: 35px;">
-                            <img src="images/en.png" alt="Logo Image" style="width: 35px;">
+                            <img src="images/sr.png" alt="Logo Image" style="width: 35px;" onclick="changeLanguage('sr','promeni')">
+                            <img src="images/en.png" alt="Logo Image" style="width: 35px;" onclick="changeLanguage('en','promeni')">
                         </div>
                     </div>
                     
@@ -60,8 +61,9 @@
                     <div class="menu-item shadow-sm" onclick="toggleSubMenu(this)">
                         <h2 style="margin-bottom: 2px;">
                             <span class="d-flex">
-                                <i class="fas fa-glass-martini-alt" style="width: 35px;"></i> <!-- Ikona za aperitiv i likere -->                                
-                                <span class="w-75">Aperitivi i likeri</span>
+                                <i class="fas fa-glass-martini-alt" style="width: 35px;"></i> 
+                                <!-- Ikona za aperitiv i likere -->                                
+                                <span class="w-75" id="aperitiviText">Aperitivi i likeri</span>
                                 <i class="fas fa-angle-down ml-4 mt-1 arrow-icon"></i>
                             </span>
                         </h2>
@@ -103,7 +105,8 @@
                     <div class="menu-item shadow-sm" onclick="toggleSubMenu(this)">
                         <h2 style="margin-bottom: 2px;">
                             <span class="d-flex">
-                                <i class="fas fa-coffee" style="width: 35px;"></i> 
+                                <i class="fas fa-mug-hot" style="width: 35px;"></i>
+
                                 <span class="w-75">Topli Napici</span>
                                 <i class="fas fa-angle-down ml-4 mt-1 arrow-icon"></i>
                             </span>
@@ -113,6 +116,61 @@
                         </div>
                     </div>
 
+                
+
+
+                    <div class="menu-item shadow-sm" onclick="toggleSubMenu(this)">
+                        <h2 style="margin-bottom: 2px;">
+                            <span class="d-flex">
+                                <i class="fas fa-wine-glass-alt" style="width: 35px;"></i>
+                                <span class="w-75">Sokovi</span>
+                                <i class="fas fa-angle-down ml-4 mt-1 arrow-icon"></i>
+                            </span>
+                        </h2>
+                        <div class="submenu">
+                            <!-- Podaci će se dinamički generisati ovde pomoću JavaScript-a -->
+                        </div>
+                    </div>
+
+                    <div class="menu-item shadow-sm" onclick="toggleSubMenu(this)">
+                        <h2 style="margin-bottom: 2px;">
+                            <span class="d-flex">
+                                <i class="fas fa-wine-bottle" style="width: 35px;"></i>
+                                <span class="w-75">Energetski napici i Voda</span>
+                                <i class="fas fa-angle-down ml-4 mt-1 arrow-icon"></i>
+                            </span>
+                        </h2>
+                        <div class="submenu">
+                            <!-- Podaci će se dinamički generisati ovde pomoću JavaScript-a -->
+                        </div>
+                    </div>
+
+                    <div class="menu-item shadow-sm" onclick="toggleSubMenu(this)">
+                        <h2 style="margin-bottom: 2px;">
+                            <span class="d-flex">
+                                <i class="fas fa-glass-whiskey" style="width: 35px;"></i>
+                                <span class="w-75">Viski</span>
+                                <i class="fas fa-angle-down ml-4 mt-1 arrow-icon"></i>
+                            </span>
+                        </h2>
+                        <div class="submenu">
+                            <!-- Podaci će se dinamički generisati ovde pomoću JavaScript-a -->
+                        </div>
+                    </div>
+
+                    <div class="menu-item shadow-sm" onclick="toggleSubMenu(this)">
+                        <h2 style="margin-bottom: 2px;">
+                            <span class="d-flex">
+                                <i class="fas fa-cocktail" style="width: 35px;"></i>
+
+                                <span class="w-75">Kokteli</span>
+                                <i class="fas fa-angle-down ml-4 mt-1 arrow-icon"></i>
+                            </span>
+                        </h2>
+                        <div class="submenu">
+                            <!-- Podaci će se dinamički generisati ovde pomoću JavaScript-a -->
+                        </div>
+                    </div>
 
                     <div class="menu-item shadow-sm" onclick="toggleSubMenu(this)">
                         <h2 style="margin-bottom: 2px;">

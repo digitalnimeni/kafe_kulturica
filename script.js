@@ -1,3 +1,35 @@
+function changeLanguage(language,action) {
+    // Postavite tekst na odgovarajući jezik
+    
+    if (language === 'en') {
+        document.getElementById('aperitiviText').innerText = 'Aperitifs and Liqueurs';
+        // Dodajte još logike za druge elemente koji treba da se promene na engleski
+    } else if (language === 'sr') {
+        document.getElementById('aperitiviText').innerText = 'Aperitivi i likeri';
+        // Dodajte još logike za druge elemente koji treba da se promene na srpski
+    }
+
+    // Sačuvaj izabrani jezik u lokalnom skladištu
+    localStorage.setItem('selectedLanguage', language);
+    if(action=='promeni'){
+        // Reload stranice nakon promene jezika
+        location.reload();
+
+    }
+}
+
+// Prilikom učitavanja stranice, proverite da li postoji sačuvani jezik u lokalnom skladištu
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLanguage = localStorage.getItem('selectedLanguage');
+
+    // Ako postoji sačuvani jezik, primenite ga na stranicu
+    if (savedLanguage) {
+        changeLanguage(savedLanguage,'nista');
+    }
+});
+
+
+
 const menuData = {
     "categories": [
         {
@@ -91,6 +123,21 @@ const menuData = {
                 // Dodajte ostale stavke za tople napitke po potrebi
             ]
         },
+
+        {
+            "name": "Aperitifs and Liqueurs",
+            "items": [
+                {
+                    "name": "Gorka1 tajna 0,05l",
+                    "image": "images/gorka_tajna00_5l.png",
+                    "price": "150 RSD"
+                },
+                
+                // Dodajte ostale stavke za tople napitke po potrebi
+            ]
+        },
+
+
         {
             "name": "Vina",
             "items": [
@@ -298,7 +345,198 @@ const menuData = {
           },
              // Dodajte ostale stavke za alkoholne napitke po potrebi
          ]
-     }
+     },
+     {
+        "name": "Sokovi",
+        "items": [
+            {
+                "name": "Coca Cola 0,25l",
+                "image": "images/kokakola025.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Coca Cola 0,1l",
+                "image": "images/colacasa.png",
+                "price": "90 RSD"
+            },
+            {
+                "name": "Coca Cola zero 0,33l",
+                "image": "images/colaziro.jpg",
+                "price": "180 RSD"
+            },
+            {
+                "name": "Cocta 0,25l",
+                "image": "images/kokta.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Fanta 0,25l",
+                "image": "images/fanta.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Sprite 0,25l",
+                "image": "images/sprite1.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Schweppers 0,25l",
+                "image": "images/sveps.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Pomorandža 0,25l",
+                "image": "images/pomorandza.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Borovnica 0,25l",
+                "image": "images/borovnica.jpg",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Breskva 0,25l",
+                "image": "images/breskva.jpg",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Jabuka 0,25l",
+                "image": "images/jabuka1.jpg",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Jagoda 0,25l",
+                "image": "images/jagoda.jpg",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Grožđe 0,25l",
+                "image": "images/grozdje.jpg",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Multi vitamin 0,25l",
+                "image": "images/multivitamin.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Cedevita 0,2l",
+                "image": "images/cedevita.png",
+                "price": "160 RSD"
+            },
+            {
+                "name": "Multi sola 0,5l",
+                "image": "images/multisola.jpg",
+                "price": "190 RSD"
+            },
+            {
+                "name": "Ice tea 0,5l",
+                "image": "images/icetea.jpg",
+                "price": "190 RSD"
+            },
+            {
+                "name": "Ceđena pomorandža 0,33l",
+                "image": "images/cp.png",
+                "price": "260 RSD"
+            },
+            {
+                "name": "Limunada 0,33l",
+                "image": "images/limunada.jpg",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Ceđeni MIX",
+                "image": "images/mix1.jpg",
+                "price": "270 RSD"
+            },
+            // Dodajte ostale stavke za alkoholne napitke po potrebi
+        ]
+    },
+    {
+        "name": "Energetski napici i Voda",
+        "items": [
+            {
+                "name": "Rosa voda 0,33l",
+                "image": "images/rosa.jpg",
+                "price": "130 RSD"
+            },
+            {
+                "name": "Rosa voda gazirana 0,33l",
+                "image": "images/rosag.jpg",
+                "price": "140 RSD"
+            },
+            {
+                "name": "Rosa voda gazirana 0,75l",
+                "image": "images/rosag.jpg",
+                "price": "210 RSD"
+            },
+            {
+                "name": "Knjaz Miloš gazirana 0,25l",
+                "image": "images/knjaz.jpg",
+                "price": "140 RSD"
+            },
+            {
+                "name": "Knjaz Miloš gazirana 0,25l",
+                "image": "images/knjaz075.jpg",
+                "price": "210 RSD"
+            },
+            {
+                "name": "Knjaz Miloš limun 0,33l",
+                "image": "images/knjazlimun.jpg",
+                "price": "150 RSD"
+            },
+            {
+                "name": "Red Bull 0,25l",
+                "image": "images/redbul.jpg",
+                "price": "290 RSD"
+            },
+            {
+                "name": "Guarana 0,25l",
+                "image": "images/guarana.jpg",
+                "price": "190 RSD"
+            }
+            // Dodajte ostale stavke za alkoholne napitke po potrebi
+        ]
+    },
+    {
+        "name": "Viski",
+        "items": [
+            {
+                "name": "Jack Deniels 0,05l",
+                "image": "images/jack1.jpg",
+                "price": "360 RSD"
+            },
+            {
+                "name": "Jameson 0,05l",
+                "image": "images/jameson.jpg",
+                "price": "330 RSD"
+            }
+           
+            // Dodajte ostale stavke za alkoholne napitke po potrebi
+        ]
+    },
+    {
+        "name": "Kokteli",
+        "items": [
+            {
+                "name": "Cuba libre",
+                "image": "images/cuba.png",
+                "price": "300 RSD"
+            },
+            {
+                "name": "Mojito",
+                "image": "images/mojito.png",
+                "price": "350 RSD"
+            },
+            {
+                "name": "Gin Tonik",
+                "image": "images/gin.png",
+                "price": "320 RSD"
+            }
+           
+            // Dodajte ostale stavke za alkoholne napitke po potrebi
+        ]
+    },
         // Dodajte podatke za dodatne kategorije po potrebi
     ]
 };
