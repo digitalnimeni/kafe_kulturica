@@ -39,7 +39,7 @@
                     <div class="logo">
                         <div>
                             <img src="images/logo1.png" alt="Logo Image">
-                            <span>Digitalni meni</span>
+                            <span id="digmeni">Digitalni meni</span>
                             <hr>
                         </div>
                        
@@ -49,13 +49,13 @@
                     
                     
                     <!-- Baner -->
-                    <div class="baner">
+                    <!-- <div class="baner">
                         <span class="action-text">Akcija</span>
                         <span class="center-text">
                             Espresso kafa <span class="green-text">+ Cedevita</span>
                         </span>
                         <span class="price-text">250 RSD</span>
-                    </div>
+                    </div> -->
                     <!-- <br> -->
                     <!-- Kategorija 1 -->
                     <div class="menu-item shadow-sm" onclick="toggleSubMenu(this)">
@@ -77,8 +77,8 @@
                     <div class="menu-item shadow-sm" onclick="toggleSubMenu(this)">
                         <h2 style="margin-bottom: 2px;">
                             <span class="d-flex">
-                                <i class="fas fa-wine-glass" style="width: 35px;"></i> <!-- Ikona za vina -->
-                                <span class="w-75">Vina</span>
+                                <i class="fas fa-wine-glass"  style="width: 35px;"></i> <!-- Ikona za vina -->
+                                <span class="w-75" id="vinaText">Vina</span>
                                 <i class="fas fa-angle-down ml-4 mt-1 arrow-icon"></i>
                             </span>
                         </h2>
@@ -92,7 +92,7 @@
                         <h2 style="margin-bottom: 2px;">
                             <span class="d-flex">
                                 <i class="fas fa-beer" style="width: 35px;"></i> 
-                            <span class="w-75">Piva</span>
+                            <span class="w-75" id="pivaText" >Piva</span>
                             <i class="fas fa-angle-down ml-4 mt-1 arrow-icon"></i>
                             </span>
                            
@@ -107,7 +107,7 @@
                             <span class="d-flex">
                                 <i class="fas fa-mug-hot" style="width: 35px;"></i>
 
-                                <span class="w-75">Topli Napici</span>
+                                <span class="w-75" id="toplinapiciText">Topli Napici</span>
                                 <i class="fas fa-angle-down ml-4 mt-1 arrow-icon"></i>
                             </span>
                         </h2>
@@ -123,7 +123,7 @@
                         <h2 style="margin-bottom: 2px;">
                             <span class="d-flex">
                                 <i class="fas fa-wine-glass-alt" style="width: 35px;"></i>
-                                <span class="w-75">Sokovi</span>
+                                <span class="w-75" id="sokoviText">Sokovi</span>
                                 <i class="fas fa-angle-down ml-4 mt-1 arrow-icon"></i>
                             </span>
                         </h2>
@@ -136,7 +136,7 @@
                         <h2 style="margin-bottom: 2px;">
                             <span class="d-flex">
                                 <i class="fas fa-wine-bottle" style="width: 35px;"></i>
-                                <span class="w-75">Energetski napici i Voda</span>
+                                <span class="w-75" id="vodaText">Energetski napici i Voda</span>
                                 <i class="fas fa-angle-down ml-4 mt-1 arrow-icon"></i>
                             </span>
                         </h2>
@@ -149,7 +149,7 @@
                         <h2 style="margin-bottom: 2px;">
                             <span class="d-flex">
                                 <i class="fas fa-glass-whiskey" style="width: 35px;"></i>
-                                <span class="w-75">Viski</span>
+                                <span class="w-75" id="viskiText">Viski</span>
                                 <i class="fas fa-angle-down ml-4 mt-1 arrow-icon"></i>
                             </span>
                         </h2>
@@ -163,7 +163,7 @@
                             <span class="d-flex">
                                 <i class="fas fa-cocktail" style="width: 35px;"></i>
 
-                                <span class="w-75">Kokteli</span>
+                                <span class="w-75" id="kokteliText">Kokteli</span>
                                 <i class="fas fa-angle-down ml-4 mt-1 arrow-icon"></i>
                             </span>
                         </h2>
@@ -176,7 +176,7 @@
                         <h2 style="margin-bottom: 2px;">
                             <span class="d-flex">
                                 <i class="fas fa-cookie-bite" style="width: 35px;"></i> 
-                                <span class="w-75">Grickalice</span>
+                                <span class="w-75" id="grickaliceText">Grickalice</span>
                                 <i class="fas fa-angle-down ml-4 mt-1 arrow-icon"></i>
                             </span>
                         </h2>
@@ -187,7 +187,7 @@
                     <!-- Dodajte ostale kategorije po potrebi -->
                     <br>
                     <hr>
-                    <span><b>Napomena:</b><i>Cene su izražene u dinarima (RSD).</i></span>
+                    <span id="napomena"><b>Napomena:</b><i>Cene su izražene u dinarima (RSD).</i></span>
                     <hr>
                     <footer class="text-center mt-5">
                         <p class="fp">&copy; 2024 Kafe Kulturica - Vaša omiljena lokacija.</p>

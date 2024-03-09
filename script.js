@@ -3,9 +3,33 @@ function changeLanguage(language,action) {
     
     if (language === 'en') {
         document.getElementById('aperitiviText').innerText = 'Aperitifs and Liqueurs';
+        document.getElementById('vinaText').innerText = 'Wines';
+        document.getElementById('pivaText').innerText = 'Beers';
+        document.getElementById('toplinapiciText').innerText = 'Hot Drinks';
+        document.getElementById('sokoviText').innerText = 'Juices';
+        document.getElementById('vodaText').innerText = 'Energy Drinks and Water';
+        document.getElementById('viskiText').innerText = 'Whiskey';
+        document.getElementById('kokteliText').innerText = 'Cocktails';
+        document.getElementById('grickaliceText').innerText = 'Snacks';
+        document.getElementById('digmeni').innerText = 'Digital Menu';
+        document.getElementById('napomena').innerHTML = '<b>Note:</b><i>Prices are in Serbian Dinars (RSD).</i>';
+        document.querySelector('footer p.fp').innerHTML = '&copy; 2024 Cafe Kulturica - Your favorite spot.';
+        document.title = 'Cafe Menu';
         // Dodajte još logike za druge elemente koji treba da se promene na engleski
     } else if (language === 'sr') {
         document.getElementById('aperitiviText').innerText = 'Aperitivi i likeri';
+        document.getElementById('vinaText').innerText = 'Vina';
+        document.getElementById('pivaText').innerText = 'Pivo';
+        document.getElementById('toplinapiciText').innerText = 'Topli Napici';
+        document.getElementById('sokoviText').innerText = 'Sokovi';
+        document.getElementById('vodaText').innerText = 'Energetski napici i Voda';
+        document.getElementById('viskiText').innerText = 'Viski';
+        document.getElementById('kokteliText').innerText = 'Kokteli';
+        document.getElementById('grickaliceText').innerText = 'Grickalice';
+        document.getElementById('digmeni').innerText = 'Digitalni Meni';
+        document.getElementById('napomena').innerHTML = '<b>Napomena:</b><i>Cene su izražene u dinarima (RSD).</i>';
+        document.querySelector('footer p.fp').innerHTML = '&copy; 2024 Kafe Kulturica - Vaša omiljena lokacija.';
+        document.title = 'Kafe Meni';
         // Dodajte još logike za druge elemente koji treba da se promene na srpski
     }
 
@@ -128,14 +152,93 @@ const menuData = {
             "name": "Aperitifs and Liqueurs",
             "items": [
                 {
-                    "name": "Gorka1 tajna 0,05l",
+                    "name": "Bitter Secret 0.05l",
                     "image": "images/gorka_tajna00_5l.png",
                     "price": "150 RSD"
                 },
-                
-                // Dodajte ostale stavke za tople napitke po potrebi
+                {
+                    "name": "Bitter Leaf 0.05l",
+                    "image": "images/gorki_list.png",
+                    "price": "170 RSD"
+                },
+                {
+                    "name": "Brandy Rubin 0.05l",
+                    "image": "images/vinjak_rubin.png",
+                    "price": "150 RSD"
+                },
+                {
+                   "name": "Brandy 5 0.05l",
+                   "image": "images/vinjak_rubin5.png",
+                   "price": "240 RSD"
+               },
+               {
+                   "name": "Tequila 0.03l",
+                   "image": "images/tekila.png",
+                   "price": "230 RSD"
+               },
+               {
+                   "name": "Gin Rubin 0.05l",
+                   "image": "images/gin_rubin.png",
+                   "price": "160 RSD"
+               },
+               {
+                   "name": "Gin Kraft 0.05l",
+                   "image": "images/gin_kraft1.png",
+                   "price": "230 RSD"
+               },
+               {
+                   "name": "Vodka 0.05l",
+                   "image": "images/votka.jpg",
+                   "price": "150 RSD"
+               },
+               {
+                   "name": "Vermouth 0.1l",
+                   "image": "images/vermut.png",
+                   "price": "150 RSD"
+               },
+               {
+                   "name": "Williams Pear Brandy Takovo 0.05l",
+                   "image": "images/viljamovka.png",
+                   "price": "280 RSD"
+               },
+               {
+                   "name": "Pelinkovac 0.05",
+                   "image": "images/pelinkovac2.png",
+                   "price": "170 RSD"
+               },
+               {
+                   "name": "Apricot Brandy 0.05l",
+                   "image": "images/kajsija.jpg",
+                   "price": "180 RSD"
+               },
+               {
+                   "name": "Quince Brandy 0.05l",
+                   "image": "images/dunja.jpg",
+                   "price": "180 RSD"
+               },
+               {
+                   "name": "Apple Brandy 0.05l",
+                   "image": "images/jabuka.jpg",
+                   "price": "180 RSD"
+               },
+               {
+                   "name": "Plum Brandy 0.05l",
+                   "image": "images/sljiva.jpg",
+                   "price": "160 RSD"
+               },
+               {
+                   "name": "Stock 84 0.05l",
+                   "image": "images/stok.png",
+                   "price": "220 RSD"
+               },
+               {
+                   "name": "Jagermeister 0.05l",
+                   "image": "images/jeger1.png",
+                   "price": "290 RSD"
+               }
             ]
         },
+        
 
 
         {
@@ -168,117 +271,178 @@ const menuData = {
                },
                {
                    "name": "Crno vino Praška 0,1l",
-                   "image": "images/sangrija.png",
+                   "image": "images/crnovino.jpeg",
                    "price": "140 RSD"
                },
                {
                    "name": "Belo vino Praška 0,1l",
-                   "image": "images/sangrija.png",
+                   "image": "images/belovino.jpeg",
                    "price": "130 RSD"
                },
                {
                    "name": "Rose vino Praška 0,1l",
-                   "image": "images/sangrija.png",
+                   "image": "images/rose.jpg",
                    "price": "140 RSD"
                },
                 // Dodajte ostale stavke za hladne napitke po potrebi
             ]
         },
         {
-            "name": "Piva",
+            "name": "Wines",
             "items": [
                 {
-                    "name": "Lav Premium 0,5l",
-                    "image": "images/premium1.png",
-                    "price": "160 RSD"
+                    "name": "Graševina 0.1l",
+                    "image": "images/grasevina.png",
+                    "price": "110 RSD"
                 },
                 {
-                    "name": "Lav Premium 0,33l",
-                    "image": "images/premium1.png",
-                    "price": "190 RSD"
+                    "name": "Vranac 0.1l",
+                    "image": "images/vranac.png",
+                    "price": "110 RSD"
                 },
                 {
-                   "name": "Lav  0,5l",
-                   "image": "images/lav05.png",
-                   "price": "160 RSD"
+                   "name": "Wine 0.187l",
+                   "image": "images/vino.png",
+                   "price": "290 RSD"
                },
                {
-                   "name": "Tuborg  0,33l",
-                   "image": "images/tuborg2.png",
-                   "price": "240 RSD"
-               },
-               {
-                   "name": "Tuborg Ice  0,33l",
-                   "image": "images/tuborgice.png",
-                   "price": "240 RSD"
-               },
-               {
-                   "name": "Budweiser dark 0,33l",
-                   "image": "images/badcrni.png",
-                   "price": "240 RSD"
-               },
-               {
-                   "name": "Budweiser  0,33l",
-                   "image": "images/bad.png",
+                   "name": "Mulled Wine 0.2l",
+                   "image": "images/kuvanovino.png",
                    "price": "230 RSD"
                },
                {
-                   "name": "Carlsberg 0,25l",
-                   "image": "images/calsberg.png",
-                   "price": "260 RSD"
-               },
-               {
-                   "name": "Carlsberg 0,4l",
-                   "image": "images/calsberg.png",
-                   "price": "220 RSD"
-               },
-               {
-                   "name": "Erdinger 0,33l",
-                   "image": "images/erdinger.png",
-                   "price": "300 RSD"
-               },
-               {
-                   "name": "Grimbergen blond 0,33l",
-                   "image": "images/grimblond.png",
-                   "price": "230 RSD"
-               },
-               {
-                   "name": "San miguel fresca 0,33l",
-                   "image": "images/sanmigel1.png",
-                   "price": "340 RSD"
-               },
-               {
-                   "name": "Kronenbourg blanc 0,33l",
-                   "image": "images/cron.png",
-                   "price": "240 RSD"
-               },
-               {
-                   "name": "Somersby 0,33l",
-                   "image": "images/somer.png",
-                   "price": "250 RSD"
-               },
-               {
-                   "name": "Lav Premium Točeni 0,33l",
-                   "image": "images/lavtoceno.png",
+                   "name": "Sangria 0.2l",
+                   "image": "images/sangrija.png",
                    "price": "190 RSD"
                },
                {
-                   "name": "Lav Premium Točeni 0,5l",
-                   "image": "images/lavtoceno.png",
-                   "price": "220 RSD"
+                   "name": "Red Wine Praška 0.1l",
+                   "image": "images/crnovino.jpeg",
+                   "price": "140 RSD"
                },
                {
-                   "name": "Kronenbourg Točeni 0,33l",
-                   "image": "images/krontoceni.png",
-                   "price": "260 RSD"
+                   "name": "White Wine Praška 0.1l",
+                   "image": "images/belovino.jpeg",
+                   "price": "130 RSD"
                },
                {
-                   "name": "Kronenbourg Točeni 0,5l",
-                   "image": "images/krontoceni.png",
-                   "price": "290 RSD"
-               },
+                   "name": "Rosé Wine Praška 0.1l",
+                   "image": "images/rose.jpg",
+                   "price": "140 RSD"
+               }
             ]
         },
+        
+        {
+            "name": "Piva",
+            "items": [
+                {
+                    "name": "Zaječarsko 0,33l",
+                    "image": "images/zaj033.jpg",
+                    "price": "190 RSD"
+                },
+                {
+                    "name": "Zaječarsko 0,5l",
+                    "image": "images/zaj05.jpeg",
+                    "price": "170 RSD"
+                },
+                {
+                    "name": "Birra Moretti 0,4l",
+                    "image": "images/bira1.jpg",
+                    "price": "200 RSD"
+                },
+                {
+                    "name": "Amstel 0,4l",
+                    "image": "images/amstel.jpg",
+                    "price": "200 RSD"
+                },
+                {
+                    "name": "Laško 0,33l",
+                    "image": "images/lasko.jpg",
+                    "price": "230 RSD"
+                },
+                {
+                    "name": "Heinikne 0,25l",
+                    "image": "images/haj1.jpg",
+                    "price": "310 RSD"
+                },
+                {
+                    "name": "Zaječarsko točeno  0,33l",
+                    "image": "images/toceno2.jpg",
+                    "price": "180 RSD"
+                },
+                {
+                    "name": "Zaječarsko točeno  0,5l",
+                    "image": "images/toceno2.jpg",
+                    "price": "210 RSD"
+                },
+                {
+                    "name": "Birra Moretti točeno  0,33l",
+                    "image": "images/toceno2.jpg",
+                    "price": "200 RSD"
+                },
+                {
+                    "name": "Birra Moretti točeno  0,5l",
+                    "image": "images/toceno2.jpg",
+                    "price": "230 RSD"
+                },
+            ]
+        },
+        {
+            "name": "Beers",
+            "items": [
+            {
+            "name": "Zaječarsko 0.33l",
+            "image": "images/zaj033.jpg",
+            "price": "190 RSD"
+            },
+            {
+            "name": "Zaječarsko 0.5l",
+            "image": "images/zaj05.jpeg",
+            "price": "170 RSD"
+            },
+            {
+            "name": "Birra Moretti 0.4l",
+            "image": "images/bira1.jpg",
+            "price": "200 RSD"
+            },
+            {
+            "name": "Amstel 0.4l",
+            "image": "images/amstel.jpg",
+            "price": "200 RSD"
+            },
+            {
+            "name": "Laško 0.33l",
+            "image": "images/lasko.jpg",
+            "price": "230 RSD"
+            },
+            {
+            "name": "Heineken 0.25l",
+            "image": "images/haj1.jpg",
+            "price": "310 RSD"
+            },
+            {
+            "name": "Zaječarsko Draught 0.33l",
+            "image": "images/toceno2.jpg",
+            "price": "180 RSD"
+            },
+            {
+            "name": "Zaječarsko Draught 0.5l",
+            "image": "images/toceno2.jpg",
+            "price": "210 RSD"
+            },
+            {
+            "name": "Birra Moretti Draught 0.33l",
+            "image": "images/toceno2.jpg",
+            "price": "200 RSD"
+            },
+            {
+            "name": "Birra Moretti Draught 0.5l",
+            "image": "images/toceno2.jpg",
+            "price": "230 RSD"
+            }
+            ]
+            },
         {
          "name": "Grickalice",
          "items": [
@@ -296,56 +460,77 @@ const menuData = {
          ]
      },
      {
-         "name": "Topli Napici",
-         "items": [
-             {
-                 "name": "Espresso kafa",
-                 "image": "images/kafa.png",
-                 "price": "140 RSD"
-             },
-             {
-                 "name": "Espresso kafa sa šlagom",
-                 "image": "images/kafaslag.png",
-                 "price": "170 RSD"
-             },
-             {
-              "name": "Cappucino",
-              "image": "images/cappucino.png",
-              "price": "160 RSD"
-          },
-          {
-              "name": "Domaća kafa",
-              "image": "images/domacakafa.png",
-              "price": "100 RSD"
-          },
-          {
-              "name": "Topla čokolada",
-              "image": "images/toplacokolada.png",
-              "price": "170 RSD"
-          },
-          {
-              "name": "Topla čokolada sa šlagom",
-              "image": "images/toplacokoladaslag.png",
-              "price": "200 RSD"
-          },
-          {
-              "name": "Čaj fructus",
-              "image": "images/caj.png",
-              "price": "140 RSD"
-          },
-          {
-              "name": "Šlag",
-              "image": "images/slag.png",
-              "price": "30 RSD"
-          },
-          {
-              "name": "Mleko",
-              "image": "images/mleko.png",
-              "price": "60 RSD"
-          },
-             // Dodajte ostale stavke za alkoholne napitke po potrebi
-         ]
-     },
+        "name": "Snacks",
+        "items": [
+        {
+        "name": "Chips 150g",
+        "image": "images/cips1.png",
+        "price": "240 RSD"
+        },
+        {
+        "name": "Peanuts 100g",
+        "image": "images/kikiriki1.png",
+        "price": "190 RSD"
+        }
+        // Add more items for snacks as needed
+        ]
+        },
+     {
+        "name": "Hot Drinks",
+        "items": [
+            {
+                "name": "Espresso Coffee",
+                "image": "images/kafa.png",
+                "price": "140 RSD"
+            },
+            {
+                "name": "Espresso Coffee with Whipped Cream",
+                "image": "images/kafaslag.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Cappuccino",
+                "image": "images/cappucino.png",
+                "price": "160 RSD"
+            },
+            {
+                "name": "Homemade Coffee",
+                "image": "images/domacakafa.png",
+                "price": "100 RSD"
+            },
+            {
+                "name": "Hot Chocolate",
+                "image": "images/toplacokolada.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Hot Chocolate with Whipped Cream",
+                "image": "images/toplacokoladaslag.png",
+                "price": "200 RSD"
+            },
+            {
+                "name": "Fructus Tea",
+                "image": "images/caj.png",
+                "price": "140 RSD"
+            },
+            {
+                "name": "Whipped Cream",
+                "image": "images/slag.png",
+                "price": "30 RSD"
+            },
+            {
+                "name": "Milk",
+                "image": "images/mleko.png",
+                "price": "60 RSD"
+            },
+            {
+                "name": "Plazma Shake",
+                "image": "images/plazma1.png",
+                "price": "290 RSD"
+            }
+        ]
+    },
+    
      {
         "name": "Sokovi",
         "items": [
@@ -453,6 +638,112 @@ const menuData = {
         ]
     },
     {
+        "name": "Juices",
+        "items": [
+            {
+                "name": "Coca Cola 0.25l",
+                "image": "images/kokakola025.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Coca Cola 0.1l",
+                "image": "images/colacasa.png",
+                "price": "90 RSD"
+            },
+            {
+                "name": "Coca Cola Zero 0.33l",
+                "image": "images/colaziro.jpg",
+                "price": "180 RSD"
+            },
+            {
+                "name": "Cocta 0.25l",
+                "image": "images/kokta.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Fanta 0.25l",
+                "image": "images/fanta.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Sprite 0.25l",
+                "image": "images/sprite1.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Schweppes 0.25l",
+                "image": "images/sveps.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Orange Juice 0.25l",
+                "image": "images/pomorandza.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Blueberry Juice 0.25l",
+                "image": "images/borovnica.jpg",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Peach Juice 0.25l",
+                "image": "images/breskva.jpg",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Apple Juice 0.25l",
+                "image": "images/jabuka1.jpg",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Strawberry Juice 0.25l",
+                "image": "images/jagoda.jpg",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Grape Juice 0.25l",
+                "image": "images/grozdje.jpg",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Multi Vitamin Juice 0.25l",
+                "image": "images/multivitamin.png",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Cedevita 0.2l",
+                "image": "images/cedevita.png",
+                "price": "160 RSD"
+            },
+            {
+                "name": "Multi Sola 0.5l",
+                "image": "images/multisola.jpg",
+                "price": "190 RSD"
+            },
+            {
+                "name": "Ice Tea 0.5l",
+                "image": "images/icetea.jpg",
+                "price": "190 RSD"
+            },
+            {
+                "name": "Fresh Orange Juice 0.33l",
+                "image": "images/cp.png",
+                "price": "260 RSD"
+            },
+            {
+                "name": "Lemonade 0.33l",
+                "image": "images/limunada.jpg",
+                "price": "170 RSD"
+            },
+            {
+                "name": "Fresh Mix Juice",
+                "image": "images/mix1.jpg",
+                "price": "270 RSD"
+            }
+        ]
+    },
+    
+    {
         "name": "Energetski napici i Voda",
         "items": [
             {
@@ -499,6 +790,52 @@ const menuData = {
         ]
     },
     {
+        "name": "Energy Drinks and Water",
+        "items": [
+            {
+                "name": "Rosa Water 0.33l",
+                "image": "images/rosa.jpg",
+                "price": "130 RSD"
+            },
+            {
+                "name": "Rosa Sparkling Water 0.33l",
+                "image": "images/rosag.jpg",
+                "price": "140 RSD"
+            },
+            {
+                "name": "Rosa Sparkling Water 0.75l",
+                "image": "images/rosag.jpg",
+                "price": "210 RSD"
+            },
+            {
+                "name": "Knjaz Miloš Sparkling Water 0.25l",
+                "image": "images/knjaz.jpg",
+                "price": "140 RSD"
+            },
+            {
+                "name": "Knjaz Miloš Sparkling Water 0.75l",
+                "image": "images/knjaz075.jpg",
+                "price": "210 RSD"
+            },
+            {
+                "name": "Knjaz Miloš Lemon 0.33l",
+                "image": "images/knjazlimun.jpg",
+                "price": "150 RSD"
+            },
+            {
+                "name": "Red Bull 0.25l",
+                "image": "images/redbul.jpg",
+                "price": "290 RSD"
+            },
+            {
+                "name": "Guarana 0.25l",
+                "image": "images/guarana.jpg",
+                "price": "190 RSD"
+            }
+        ]
+    },
+    
+    {
         "name": "Viski",
         "items": [
             {
@@ -515,6 +852,22 @@ const menuData = {
             // Dodajte ostale stavke za alkoholne napitke po potrebi
         ]
     },
+    {
+        "name": "Whiskey",
+        "items": [
+        {
+        "name": "Jack Daniels 0.05l",
+        "image": "images/jack1.jpg",
+        "price": "360 RSD"
+        },
+        {
+        "name": "Jameson 0.05l",
+        "image": "images/jameson.jpg",
+        "price": "330 RSD"
+        }
+        // Add more items for whiskey as needed
+        ]
+        },
     {
         "name": "Kokteli",
         "items": [
@@ -536,6 +889,28 @@ const menuData = {
            
             // Dodajte ostale stavke za alkoholne napitke po potrebi
         ]
+    },
+    
+{
+    "name": "Cocktails",
+    "items": [
+    {
+    "name": "Cuba Libre",
+    "image": "images/cuba.png",
+    "price": "300 RSD"
+    },
+    {
+    "name": "Mojito",
+    "image": "images/mojito.png",
+    "price": "350 RSD"
+    },
+    {
+    "name": "Gin Tonic",
+    "image": "images/gin.png",
+    "price": "320 RSD"
+    }
+    // Add more items for cocktails as needed
+    ]
     },
         // Dodajte podatke za dodatne kategorije po potrebi
     ]
@@ -576,39 +951,89 @@ const menuData = {
  
  
  function generateSubMenu(category, submenuContainer) {
-     submenuContainer.innerHTML = ''; // Očisti prethodni sadržaj
- 
-     category.items.forEach(item => {
-         const menuItemDetail = document.createElement('div');
-         menuItemDetail.classList.add('menu-item-detail');
- 
-         const image = document.createElement('img');
-         image.src = item.image;
-         image.alt = 'Product Image';
- 
-         const itemInfo = document.createElement('div');
-         itemInfo.classList.add('menu-item-info');
- 
-         const itemName = document.createElement('p');
-         itemName.classList.add('item');
-         itemName.textContent = item.name;
- 
-         const itemPrice = document.createElement('p');
-         itemPrice.classList.add('item-price');
-         itemPrice.textContent = item.price;
- 
-         itemInfo.appendChild(itemName);
-         itemInfo.appendChild(itemPrice);
- 
-         menuItemDetail.appendChild(image);
-         menuItemDetail.appendChild(itemInfo);
- 
-         submenuContainer.appendChild(menuItemDetail);
-     });
- 
-     // Prikazivanje podmenija
-     submenuContainer.style.maxHeight = submenuContainer.scrollHeight + 'px';
- }
+    submenuContainer.innerHTML = ''; // Očisti prethodni sadržaj
+
+    Promise.all(category.items.map(loadImage))
+        .then(images => {
+            images.forEach((image, index) => {
+                const item = category.items[index];
+
+                const menuItemDetail = document.createElement('div');
+                menuItemDetail.classList.add('menu-item-detail');
+
+                const itemInfo = document.createElement('div');
+                itemInfo.classList.add('menu-item-info');
+
+                const itemName = document.createElement('p');
+                itemName.classList.add('item');
+                itemName.textContent = item.name;
+
+                const itemPrice = document.createElement('p');
+                itemPrice.classList.add('item-price');
+                itemPrice.textContent = item.price;
+
+                itemInfo.appendChild(itemName);
+                itemInfo.appendChild(itemPrice);
+
+                menuItemDetail.appendChild(image);
+                menuItemDetail.appendChild(itemInfo);
+
+                submenuContainer.appendChild(menuItemDetail);
+            });
+
+            // Prikazivanje podmenija
+            submenuContainer.style.maxHeight = submenuContainer.scrollHeight + 'px';
+        })
+        .catch(error => {
+            console.error('Failed to load images:', error);
+        });
+}
+
+function loadImage(item) {
+    return new Promise((resolve, reject) => {
+        const image = new Image();
+        image.onload = () => resolve(image);
+        image.onerror = () => reject(new Error(`Failed to load image: ${item.image}`));
+        image.src = item.image;
+        image.alt = 'Product Image';
+    });
+}
+
+
+// function generateSubMenu(category, submenuContainer) {
+//     submenuContainer.innerHTML = ''; // Očisti prethodni sadržaj
+
+//     category.items.forEach(item => {
+//         const menuItemDetail = document.createElement('div');
+//         menuItemDetail.classList.add('menu-item-detail');
+
+//         const image = document.createElement('img');
+//         image.src = item.image;
+//         image.alt = 'Product Image';
+
+//         const itemInfo = document.createElement('div');
+//         itemInfo.classList.add('menu-item-info');
+
+//         const itemName = document.createElement('p');
+//         itemName.classList.add('item');
+//         itemName.textContent = item.name;
+
+//         const itemPrice = document.createElement('p');
+//         itemPrice.classList.add('item-price');
+//         itemPrice.textContent = item.price;
+
+//         itemInfo.appendChild(itemName);
+//         itemInfo.appendChild(itemPrice);
+
+//         menuItemDetail.appendChild(image);
+//         menuItemDetail.appendChild(itemInfo);
+
+//         submenuContainer.appendChild(menuItemDetail);
+//     });
+
+//     // Prikazivanje podmenija
+//     submenuContainer.style.maxHeight = submenuContainer.scrollHeight + 'px';
+// }
  
 
  function copyWifiKey() {
